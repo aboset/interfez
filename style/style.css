@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*:root{
+   --color-white: rgba(255,255,255, .7);
+   --clr-white-op: rgb(255,255,255);
+   --clr-turq-hov: rgb(66, 237, 228);
+
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Raleway', sans-serif;
+}
+
+
+.container{
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background-color: white;
+   background-size: cover;
+   z-index: -1;
+   
+}
+
+header{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height: 15vh;
+
+}
+
+nav{
+   height: 100%;
+   margin-left: 3rem;
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   align-items: center;
+   
+}
+
+.headertop{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 25px;
+   background-color: rgb(77, 139, 167);
+}
+.headertop p{
+   font-size: 15px;
+   font-family: 'Open Sans';
+   color: white;
+   text-transform: uppercase;
+   font-weight: 500;
+   letter-spacing: 0.1em;
+
+}
+.logo{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo h2{
+font-size: 20px;
+font-family: 'Russo one';
+font-weight: bold;
+letter-spacing: 0.15em;
+
+}
+
+.logo-color{
+   margin-left: 5px;
+   color: rgb(77, 139, 167);
+}
+
+.logo img{
+   width: 50px;
+   height: 50px;
+}
+
+nav a{
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;
+   font-size: .8rem;
+   font-weight: 500;
+   color: black;
+   transition: all .5s ease;
+}
+
+nav a:hover{
+   color: var(--clr-turq-hov);
+   font-size: 1rem;
+   cursor: pointer;
+}
+
+main{
+   height: 75vh;
+   display: flex;
+}
+main>div{
+   display: flex;
+   width: 50%;
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+   animation: marg-left  1s ease both;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+div h1{
+   margin: 2rem 0 2rem 3rem;
+   font-size: 7rem;
+   font-weight: 600;
+}
+
+div p{
+   margin-left: 4rem;
+   font-size: 1rem;
+}
+
+section{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   width: 40%;
+   padding: 40px 10px 40px 160px;
+   
+}
+section h1{
+font-family: 'Russo one';
+font-size: 45px;
+letter-spacing: 0.05em;
+color:rgb(77, 139, 167); 
+
+}
+
+section p{
+   font-size: 18px;
+   font-weight: 400;
+   margin-bottom: 20px;
+}
+
+.botones {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+section div{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.btn{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.btn div{
+   width: 50%;
+}
+
+.btn div a{
+   width: 80%;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   color: var(--color-white);
+   text-decoration: none;
+   background-color:rgb(77, 139, 167); 
+   border-radius: 15px;
+   transition: all .5s ease;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 500;
+   text-align: center;
+   padding: 15px 25px 15px 25px;
+}
+.hero{
+   width: 500px;
+   height: 500px;
+}
+section>div:nth-child(1){
+   animation: opc  1s 1s ease both;
+}
+section>div:nth-child(2){
+   animation: opc  1s 2s ease both;
+}
+section>div:nth-child(3){
+   animation: opc  1s 3s ease both;
+}
+section>div:nth-child(4){
+   animation: opc  1s 4s ease both;
+}
+section>div:nth-child(5){
+   animation: opc  1s 5s ease both;
+}
+section>div:nth-child(6){
+   animation: opc  1s 6s ease both;
+}
+section>div:nth-child(7){
+   animation: opc  1s 7s ease both;
+}
+section>div:nth-child(8){
+   animation: opc  1s 8s ease both;
+}
+.btn div a:hover{
+   
+   cursor: pointer;
+   text-align: center;
+   font-size: 1.5rem;
+   color: var(--clr-turq-hov);
+   font-weight: bold;
+   color: white;
+   background-color: rgb(37, 81, 102);;
+   box-shadow: 2px 3px 38px 0px rgba(200, 231, 236, 0.63);
+   -webkit-box-shadow: 2px 3px 38px 0px rgba(250,243,243,0.63);
+   -moz-box-shadow: 2px 3px 38px 0px rgba(250,243,243,0.63);
+}
+
+
+footer{
+   height: 5vh;
+   margin-top: 5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(16, 16, 17, 0.99);
+   color: var(--color-white);
+   font-size: .7rem;
+
+}
+
+
+
+@keyframes opc{
+   0%{
+      /* transform: translateX(100%);*/
+      opacity: 0;
+   }
+   100%{
+       /*transform: translateX(0%);*/
+       opacity: 1;
+   }
+}
+
+
+@keyframes marg-left{
+   0%{
+      transform: translateX(-100%);
+      
+   }
+   100%{
+       transform: translateX(0%);
+       
+   }
+}
