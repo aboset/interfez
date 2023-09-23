@@ -23,7 +23,7 @@ body{
    position: absolute;
    width: 100%;
    height: 100vh;
-   background-color: white;
+   background-image: url("/images/fondo.png");
    background-size: cover;
    z-index: -1;
    
@@ -35,7 +35,6 @@ header{
    justify-content: center;
    align-items: center;
    height: 15vh;
-   background-color: #fcfbfb;
 
 }
 
@@ -49,21 +48,34 @@ nav{
    
 }
 
+.containerheader{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 .headertop{
+   width: 50%;
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 25px;
-   background-color: rgb(77, 139, 167);
+   height: 30px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-bottom: 1px solid;
+   border-color: white;
 }
 .headertop p{
    font-size: 15px;
-   font-family: 'Open Sans';
+   font-family: 'Russo one';
    color: white;
    text-transform: uppercase;
    font-weight: 500;
    letter-spacing: 0.1em;
 
+}
+.headertop img{
+   width: 20px;
+   height: 20px;
 }
 .logo{
    display: flex;
@@ -76,6 +88,7 @@ nav{
 font-size: 20px;
 font-family: 'Russo one';
 font-weight: bold;
+color: white;
 letter-spacing: 0.15em;
 
 }
@@ -92,10 +105,11 @@ letter-spacing: 0.15em;
 
 nav a{
    text-decoration: none;
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Russo one';
+   letter-spacing: 0.05rem;
    font-size: .8rem;
-   font-weight: 600;
-   color: black;
+   font-weight: 100;
+   color: rgb(255, 255, 255);
    transition: all .5s ease;
 }
 
@@ -122,15 +136,18 @@ main>div{
 }
 
 
-div h1{
-   margin: 2rem 0 2rem 3rem;
-   font-size: 7rem;
-   font-weight: 600;
+
+.titulo{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
 }
 
-div p{
-   margin-left: 4rem;
-   font-size: 1rem;
+.titulo img{
+   width: 60px;
+   height: 60px;
 }
 
 section{
@@ -139,7 +156,7 @@ section{
    flex-direction: column;
    justify-content: center;
    align-items: start;
-   width: 40%;
+   width: 60%;
    padding: 40px 10px 40px 160px;
    
 }
@@ -147,7 +164,7 @@ section h1{
 font-family: 'Russo one';
 font-size: 65px;
 letter-spacing: 0.05em;
-color:rgb(77, 139, 167); 
+color: white;
 
 }
 
@@ -155,16 +172,10 @@ section p{
    font-size: 22px;
    font-weight: 400;
    margin-bottom: 20px;
+   color: white;
 }
 
-.botones {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
-   flex-direction: row;
-}
+
 
 section div{
    display: flex;
@@ -191,10 +202,12 @@ section div{
    width: 80%;
    margin-top: 5px;
    margin-bottom: 5px;
+   background-color:rgba(255, 0, 0, 0);
    color: white;
    letter-spacing: 0.10em;
    text-decoration: none;
-   background-color:rgb(77, 139, 167); 
+   border: 2px solid;
+   border-color: white;
    border-radius: 15px;
    transition: all .5s ease;
    text-decoration: none;
@@ -204,8 +217,8 @@ section div{
    padding: 15px 25px 15px 25px;
 }
 .hero{
-   width: 500px;
-   height: 500px;
+   width: 400px;
+   height: 400px;
 }
 section>div:nth-child(1){
    animation: opc  1s 1s ease both;
@@ -235,11 +248,11 @@ section>div:nth-child(8){
    
    cursor: pointer;
    text-align: center;
-   font-size: 1.5rem;
-   color: var(--clr-turq-hov);
+   font-size: 1.3rem;
    font-weight: bold;
-   color: white;
-   background-color: rgb(37, 81, 102);;
+   color: rgb(77, 139, 167);
+   text-align: center;
+   background-color: white;
    box-shadow: 2px 3px 38px 0px rgba(200, 231, 236, 0.63);
    -webkit-box-shadow: 2px 3px 38px 0px rgba(250,243,243,0.63);
    -moz-box-shadow: 2px 3px 38px 0px rgba(250,243,243,0.63);
